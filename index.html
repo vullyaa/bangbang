@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alternate U.S. Election Timeline Simulator (1796–2100)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <h1>🦅 Alternate U.S. Election Timeline Simulator</h1>
+        <p>
+          From 1796 to 2100, with divergent history, ideology drift, crises,
+          revolutions, electoral college mechanics, and full narrative event logs.
+        </p>
+        <div class="controls">
+          <label>
+            Seed
+            <input id="seedInput" type="text" placeholder="random" />
+          </label>
+          <button id="runBtn">Generate New Timeline 🚀</button>
+          <button id="rerollBtn">Reroll Current Seed 🔄</button>
+        </div>
+      </header>
+
+      <section class="stat-grid" id="topStats"></section>
+
+      <nav class="tabs">
+        <button class="tab active" data-tab="elections">Elections</button>
+        <button class="tab" data-tab="events">Events by Year</button>
+        <button class="tab" data-tab="parties">Party Evolution</button>
+        <button class="tab" data-tab="story">Story of the Timeline</button>
+      </nav>
+
+      <main>
+        <section class="panel active" id="elections"></section>
+        <section class="panel" id="events"></section>
+        <section class="panel" id="parties"></section>
+        <section class="panel" id="story"></section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
